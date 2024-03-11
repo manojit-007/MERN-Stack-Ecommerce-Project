@@ -3,7 +3,7 @@ class ErrorHandel extends Error{
         super(message);
         this.statusCode = statusCode
 
-        Error.captureStackTrace(this,this.constructor)
+        Error.captureStackTrace(this,this.constructor) //capture the fault with full details like url path
     }
 }
 
